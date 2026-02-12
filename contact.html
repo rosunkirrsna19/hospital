@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sunshine Hospital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-circle">
+                    <span class="logo-cross">+</span>
+                </div>
+                <h1>Sunshine Hospital</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We're here to help and answer any questions you may have</p>
+        </div>
+    </section>
+
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <div class="info-item">
+                        <div class="info-icon address"></div>
+                        <div class="info-text">
+                            <h3>Address</h3>
+                            <address>
+                                123 Sunshine Boulevard<br>
+                                Health City, HC 12345
+                            </address>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon phone"></div>
+                        <div class="info-text">
+                            <h3>Phone</h3>
+                            <p>
+                                Main: <a href="tel:+1234567890">(123) 456-7890</a><br>
+                                Emergency: <a href="tel:+1234567891">(123) 456-7891</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon email"></div>
+                        <div class="info-text">
+                            <h3>Email</h3>
+                            <p>
+                                General Inquiries: <a href="mailto:info@sunshinehospital.com">info@sunshinehospital.com</a><br>
+                                Patient Relations: <a href="mailto:patient@sunshinehospital.com">patient@sunshinehospital.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon hours"></div>
+                        <div class="info-text">
+                            <h3>Hours</h3>
+                            <p>
+                                Emergency: 24/7<br>
+                                Main Hospital: 6am-9pm daily<br>
+                                Clinics: Vary by specialty
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-forms">
+                    <div class="form-container" id="appointment">
+                        <h2>Appointment Request</h2>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="appt-name">Full Name*</label>
+                                <input type="text" id="appt-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="appt-phone">Phone Number*</label>
+                                <input type="tel" id="appt-phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="appt-email">Email Address*</label>
+                                <input type="email" id="appt-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="appt-department">Department/Specialty*</label>
+                                <select id="appt-department" required>
+                                    <option value="">Select Department</option>
+                                    <option value="cardiology">Cardiology</option>
+                                    <option value="neurology">Neurology</option>
+                                    <option value="orthopedics">Orthopedics</option>
+                                    <option value="pediatrics">Pediatrics</option>
+                                    <option value="primary">Primary Care</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="appt-doctor">Preferred Doctor (optional)</label>
+                                <input type="text" id="appt-doctor">
+                            </div>
+                            <div class="form-group">
+                                <label for="appt-date">Preferred Date*</label>
+                                <input type="date" id="appt-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="appt-message">Message</label>
+                                <textarea id="appt-message" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn primary">Request Appointment</button>
+                        </form>
+                    </div>
+
+                    <div class="form-container" id="general">
+                        <h2>General Inquiry</h2>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="gen-name">Full Name*</label>
+                                <input type="text" id="gen-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="gen-email">Email Address*</label>
+                                <input type="email" id="gen-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="gen-subject">Subject*</label>
+                                <input type="text" id="gen-subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="gen-message">Message*</label>
+                                <textarea id="gen-message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location-map">
+        <div class="container">
+            <h2>Our Location</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <p>Map would be displayed here in a live implementation</p>
+                </div>
+                <div class="map-directions">
+                    <h3>Directions</h3>
+                    <p>We're conveniently located just off Highway 101, with ample parking available in our garage.</p>
+                    <a href="#" class="btn secondary">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+</body>
+</html>

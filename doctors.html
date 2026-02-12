@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors - Sunshine Hospital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-circle">
+                    <span class="logo-cross">+</span>
+                </div>
+                <h1>Sunshine Hospital</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="doctors.html" class="active">Doctors</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Medical Team</h1>
+            <p>Meet our board-certified physicians and specialists</p>
+        </div>
+    </section>
+
+    <section class="doctors-content">
+        <div class="container">
+            <div class="specialty-filter">
+                <label for="specialty-select">Filter by Specialty:</label>
+                <select id="specialty-select">
+                    <option value="all">All Specialties</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="neurology">Neurology</option>
+                    <option value="orthopedics">Orthopedics</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="surgery">General Surgery</option>
+                </select>
+            </div>
+
+            <div class="doctors-grid">
+                <div class="doctor-card" data-specialty="cardiology">
+                    <div class="doctor-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Sarah Johnson</h3>
+                        <p class="specialty">Cardiologist</p>
+                        <p class="education">MD, Harvard Medical School</p>
+                        <p class="bio">Board-certified cardiologist with 15 years of experience specializing in interventional cardiology and heart failure management.</p>
+                        <a href="contact.html" class="btn primary">Book Appointment</a>
+                    </div>
+                </div>
+
+                <div class="doctor-card" data-specialty="neurology">
+                    <div class="doctor-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Michael Chen</h3>
+                        <p class="specialty">Neurologist</p>
+                        <p class="education">MD, Johns Hopkins University</p>
+                        <p class="bio">Specializes in stroke prevention and treatment, with additional fellowship training in neurocritical care.</p>
+                        <a href="contact.html" class="btn primary">Book Appointment</a>
+                    </div>
+                </div>
+
+                <div class="doctor-card" data-specialty="orthopedics">
+                    <div class="doctor-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Robert Williams</h3>
+                        <p class="specialty">Orthopedic Surgeon</p>
+                        <p class="education">MD, Mayo Clinic</p>
+                        <p class="bio">Specializes in joint replacement and sports medicine, with particular expertise in minimally invasive techniques.</p>
+                        <a href="contact.html" class="btn primary">Book Appointment</a>
+                    </div>
+                </div>
+
+                <div class="doctor-card" data-specialty="pediatrics">
+                    <div class="doctor-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Emily Rodriguez</h3>
+                        <p class="specialty">Pediatrician</p>
+                        <p class="education">MD, Stanford University</p>
+                        <p class="bio">Provides comprehensive care for children from birth through adolescence, with special interest in childhood nutrition.</p>
+                        <a href="contact.html" class="btn primary">Book Appointment</a>
+                    </div>
+                </div>
+
+                <div class="doctor-card" data-specialty="surgery">
+                    <div class="doctor-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. James Wilson</h3>
+                        <p class="specialty">General Surgeon</p>
+                        <p class="education">MD, University of Pennsylvania</p>
+                        <p class="bio">Performs a wide range of surgical procedures with expertise in laparoscopic and robotic-assisted techniques.</p>
+                        <a href="contact.html" class="btn primary">Book Appointment</a>
+                    </div>
+                </div>
+
+                <div class="doctor-card" data-specialty="cardiology">
+                    <div class="doctor-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Patricia Lee</h3>
+                        <p class="specialty">Cardiac Electrophysiologist</p>
+                        <p class="education">MD, Columbia University</p>
+                        <p class="bio">Specializes in heart rhythm disorders and advanced pacemaker/defibrillator management.</p>
+                        <a href="contact.html" class="btn primary">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+</body>
+</html>
